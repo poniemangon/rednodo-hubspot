@@ -9,9 +9,6 @@
 
 }
 
-body {
-    overflow-x:hidden;
-}
 
 .active {color: var(--blue);}
 
@@ -184,15 +181,14 @@ button:hover {cursor: pointer;}
 
 /* FRIST */
 
-.frist-section { margin: 80px 0;}
+.frist-section { margin: 80px 0; overflow-x: hidden;}
 .frist-section .container {margin: auto;}
 .frist-section .container h5 {color: var(--grey); margin: auto; text-align: center; letter-spacing: 2px;}
 
 .big-title{
     position:relative;
-    left:-200px;
     white-space: nowrap;
-    /* right: -100px; */
+    
   }
 
   /* FRIST */
