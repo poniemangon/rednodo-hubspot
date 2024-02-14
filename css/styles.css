@@ -125,7 +125,7 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 .banner-section .container .first-heading img {position: relative; top: 10px;  }
 
 @media (max-width: 1240px){
-    .banner-section .container .col2 {min-width: none;}
+    .banner-section .container .col2 {min-width: 0;}
     .banner-section {height: auto;}
     .banner-section .container {flex-direction: column;}
     .banner-section .text-logo {margin: auto; text-align: center; margin-bottom: 40px;}
