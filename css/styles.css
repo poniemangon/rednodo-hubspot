@@ -147,16 +147,17 @@ button:hover {cursor: pointer;}
 /* banner */
 
 /* carousel */
+.slick-initialized .slick-track {
+    display: flex;
+    align-items: center;
+}
+
 .brands-slider-section {background-color: #fafafa;}
 
 .brands-slider-section .container {margin: auto; padding: 30px 0;}
 
 
-.brands-slider-section .container .item {display: flex; justify-content: center; width: 300px; padding-top: 3vh;}
-
-.brands-slider-section .container .carousel .densemfs {padding-top: 2vh;}
-
-.brands-slider-section .container .carousel .kindadense {padding-top: 1vh;}
+.brands-slider-section .container .item {display: flex; justify-content: center; width: 300px; }
 
 .brands-slider-section .container .carousel .slick-next::before {font-family: 'FontAwesome'; content: '\f054'; color:  var(--blue);}
 
