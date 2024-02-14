@@ -348,6 +348,7 @@ footer .grey-bar .container div.d-flex {column-gap: 20px;}
 
 @media (max-width: 800px) {
     footer .grey-bar .container {flex-direction: column;justify-content: center; row-gap: 10px; text-align: center;}
+    footer .grey-bar .container div.d-flex {column-gap: 20px; justify-content: center;}
 }
 
 /* greybar */
