@@ -32,6 +32,8 @@ h5 {font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; lette
 
 a, button, ::placeholder {font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 500; text-decoration: none; color: black;}
 
+a:hover {color: var(--blue); transition: all 0.6s;}
+
 p {font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 400;}
 
 input {border: none; border-bottom: 2px solid;}
@@ -48,7 +50,7 @@ label {font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400;}
 
 button {background-color: var(--blue); padding: 10px 35px; border: none; border-radius: 15px; color: white; margin-top: 2px;}
 
-button:hover {cursor: pointer;}
+button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lightblue);}
 
 
 
@@ -87,6 +89,8 @@ button:hover {cursor: pointer;}
 
 
 
+
+
 /* end header */
 
 .banner-section {background-image: url(../images/banner.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 795px;  width: 100%; padding-top: 120px;}
@@ -97,7 +101,7 @@ button:hover {cursor: pointer;}
 
 .banner-section .container .text-logo img {padding-top: 5px; padding-right: 20px;}
 
-.banner-section .container .text-logo h5 {letter-spacing: 3px; padding: 15px 0;}
+.banner-section .container .text-logo h5 {letter-spacing: 3px; padding: 15px 0; line-height: 1.5;}
 
 .banner-section .container .col2 {background-color: white; padding: 40px; margin-right: 40px; padding-bottom: 73px; height: 100%;}
 
@@ -113,36 +117,34 @@ button:hover {cursor: pointer;}
 
 .banner-section .container .col2 .send-logo {padding: 30px 15px;}
 
+.banner-section .container .first-heading {max-width: 600px;}
+
+.banner-section .container .first-heading img {position: relative; top: 10px;  }
+
 @media (max-width: 1240px){
-    .banner-section {padding-top: 60px; height: 803px;}
-    .banner-section .container {flex-direction: column;  width: 100%; scale: 0.85; padding: 0; align-items: center;}
-    .banner-section .container .col1 {text-align: center;  margin: auto; margin-bottom: 43px;}
-    .banner-section .container .col2 {padding-bottom: 5px; margin-right: 0; margin: auto;}
-    .banner-section .container .text-logo img {padding: 0;}
-    .banner-section h2.d-flex {column-gap: 10px;}
-}
-
-@media (max-width: 900px){
-    .banner-section .container .col1 h2 {font-size: 0.85;}
-    .banner-section {height: 817px;}
-    .banner-section .col1 h2.d-flex {margin-bottom: 15px;}
-    .banner-section .container .col1 h2 {scale: 0.85;}
-    .banner-section .container h5 {font-size: 15px; letter-spacing: 2px;}
- 
-}
-
-@media (max-width: 450px) {
-    .banner-section .container .col1 .first-heading {line-height: 65px; padding: 0;}
-    .banner-section h2.d-flex img {margin-bottom: 15px;}
-    .banner-section h2.d-flex {flex-direction: column; margin-bottom: 0px;}
     .banner-section {height: auto;}
-    .banner-section .container {padding: 0;}
-    .send-logo img {scale: 0.85;}
-    .banner-section .col2.form {padding: 30px; }
-    .banner-section .col2 h3 {text-align: center;}
-    .banner-section .container .col2 .send-logo { flex-direction: column; row-gap: 10px; padding: 0px; padding-top: 20px;}
-
+    .banner-section .container {flex-direction: column;}
+    .banner-section .text-logo {margin: auto; text-align: center; margin-bottom: 40px;}
+    .banner-section .container .col2 {margin: 0; padding-bottom: 40px;}
+    .banner-section .container .col2 h3 {text-align: center;}
 }
+
+@media (max-width: 1240px){
+    .banner-section .container .text-logo h2 {font-size: 50px;}
+    .banner-section .container .text-logo img {height: 62px;}
+}
+
+
+@media (max-width: 600px) {
+
+    .banner-section .container .send-logo { flex-direction: column; row-gap: 20px;}
+    .banner-section .container h2.d-flex {display: block;}
+}
+
+@media (max-width: 525px) {
+    .banner-section .container .first-heading img {margin-bottom: 20px; left: 11px;}
+}
+
 
 /* banner */
 
@@ -300,6 +302,8 @@ footer .main-footer .container ul li {margin-bottom: 10px;}
 footer .main-footer .container ul li.d-flex {column-gap: 5px;}
 
 .grey-circle {color: white; background-color: #a5a5a5; border-radius: 50%; padding: 5px; height: 16px; width: 16px; display: flex; justify-content: center; font-size: 14px; align-items: center;}
+
+.grey-circle:hover {transition: 0.6s all; background-color: var(--blue);}
 
 .count-2 {column-count: 2;}
 
