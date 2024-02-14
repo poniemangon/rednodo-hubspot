@@ -9,6 +9,10 @@
 
 }
 
+body {
+    overflow-x:hidden;
+}
+
 .active {color: var(--blue);}
 
 .blue {color: var(--blue);}
@@ -178,6 +182,21 @@ button:hover {cursor: pointer;}
 
 /* longtext */
 
+/* FRIST */
+
+.frist-section { margin: 80px 0;}
+.frist-section .container {margin: auto;}
+.frist-section .container h5 {color: var(--grey); margin: auto; text-align: center; letter-spacing: 2px;}
+
+.big-title{
+    position:relative;
+    left:-200px;
+    white-space: nowrap;
+    /* right: -100px; */
+  }
+
+  /* FRIST */
+
 /* slide2services */
 
 .slide2-section .container {margin: auto; text-align: center; flex-wrap: wrap; justify-content: space-between;}
@@ -328,7 +347,7 @@ footer .grey-bar .container p {font-size: 15px;}
 footer .grey-bar .container div.d-flex {column-gap: 20px;}
 
 @media (max-width: 800px) {
-    footer .grey-bar .container {flex-direction: column;justify-content: center; row-gap: 10px;}
+    footer .grey-bar .container {flex-direction: column;justify-content: center; row-gap: 10px; text-align: center;}
 }
 
 /* greybar */
@@ -340,3 +359,6 @@ footer li, footer a {font-family: 'Open Sans', sans-serif; font-size: 15px; font
 .pad5 {padding-right: 5px;}
 
 /* footer */
+
+
+
