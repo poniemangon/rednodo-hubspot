@@ -93,6 +93,9 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 
 /* end header */
 
+
+.banner-section {height: auto;}
+
 .banner-section {background-image: url(../images/banner.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; height: 795px;  width: 100%; padding-top: 120px;}
 
 .banner-section .container {margin: auto; padding-top: 100px;}
@@ -103,7 +106,7 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 
 .banner-section .container .text-logo h5 {letter-spacing: 3px; padding: 15px 0; line-height: 1.5;}
 
-.banner-section .container .col2 {background-color: white; padding: 40px; margin-right: 40px; padding-bottom: 73px; height: 100%;}
+.banner-section .container .col2 {background-color: white; padding: 40px; margin-right: 40px; padding-bottom: 73px; height: 100%; min-width: 360px;}
 
 .banner-section .container .col2 h3 {padding: 0;}
 
@@ -122,6 +125,7 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 .banner-section .container .first-heading img {position: relative; top: 10px;  }
 
 @media (max-width: 1240px){
+    .banner-section .container .col2 {min-width: none;}
     .banner-section {height: auto;}
     .banner-section .container {flex-direction: column;}
     .banner-section .text-logo {margin: auto; text-align: center; margin-bottom: 40px;}
@@ -284,6 +288,14 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 
     .contact-forms-section .container .form {width: 100%; max-width: none;}
 }
+
+@media (max-width: 425px){
+    .contact-forms-section .container .form button.send {background-color: white; color: var(--blue);  height: 100%;border-radius: 10px; margin: 0; border: 1px solid white;}
+    .input2 {flex-direction: column; row-gap: 5px;}
+    .contact-forms-section .container .form .input2 input {border-radius: 10px;}
+}
+
+
 
 /* contact */
 
