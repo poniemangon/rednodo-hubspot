@@ -165,6 +165,8 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 
 
 
+
+
 .brands-slider-section {background-color: #fafafa;}
 
 .brands-slider-section .container {margin: auto; padding: 40px 0;}
@@ -287,10 +289,9 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 .contact-forms-section .container .form button.send {background-color: white; color: var(--blue);  height: 100%;border-radius: 0px ;border-top-right-radius: 10px; border-bottom-right-radius: 10px; margin: 0; border: 1px solid white; padding-bottom: 11px;}
 
 
+.contact-forms-section .container .form input {background-color: var(--blue); border: 1px solid white; width: 100%; padding: 15px 0; font-weight: 500; border-radius: 10px; height: 16px;  color: white; padding: 15px; }
 
-.contact-forms-section .container .form input {background-color: var(--blue); border: 1px solid white; width: 100%; padding: 15px 0; font-weight: 500; border-radius: 10px; height: 16px;  color: white; }
-
-.contact-forms-section .container .form input::placeholder {color: white; position: relative; left: 15px; }
+.contact-forms-section .container .form input::placeholder {color: white; position: relative;  }
 
 
 
@@ -318,9 +319,12 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 }
 
 @media (max-width: 425px){
-    .contact-forms-section .container .form button.send {background-color: white; color: var(--blue);  height: 100%;border-radius: 10px; margin: 0; border: 1px solid white; }
+
+
+    .contact-forms-section .container .form button.send {background-color: white; color: var(--blue);  height: 100%;border-radius: 10px; margin: 0; border: 1px solid white; width: 100%;}
     .input2 {flex-direction: column; row-gap: 10px;}
-    .contact-forms-section .container .form .input2 input {border-radius: 10px;}
+    .contact-forms-section .container .form .input2 {width: 100%; align-items: center;}
+    .contact-forms-section .container .form .input2 input {border-radius: 10px;  width: calc(100% - 30px);}
 }
 
 
