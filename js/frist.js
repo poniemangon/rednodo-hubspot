@@ -12,7 +12,7 @@ letterCarousel('.frist','.big-title');
 					var i = jQuery(document).scrollTop() - n + jQuery(window).height();
 					var scroll = i - 150;
 					var scroll_slow = scroll + ((scroll/70)/100);
-					var img_scroll = scroll_slow * 30 /100;
+					var img_scroll = scroll_slow * 80 /100;
 					e.css({
 						transform: "translateX(" + img_scroll + "px)"
 					})

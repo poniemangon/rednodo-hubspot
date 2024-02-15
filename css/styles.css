@@ -9,6 +9,7 @@
 
 }
 
+input:focus {outline: none; font-size: 16px; }
 
 .active {color: var(--blue);}
 
@@ -63,6 +64,8 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 
 .fa-bars {display: none;}
 
+.header-section img {position: relative; top: 1vh;}
+
 .burgermenu {display: none;}
 .burgermenu {width: 100%; text-align: center; }
 .burgermenu li {padding: 20px 0; border-bottom: 1px solid rgb(192, 192, 192);}
@@ -100,13 +103,15 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 
 .banner-section .container {margin: auto; padding-top: 100px;}
 
+.banner-section .container .first-heading img {top: 10px;}
+
 .banner-section .container .text-logo {color: white; line-height: 50px;}
 
 .banner-section .container .text-logo img {padding-top: 5px; padding-right: 20px;}
 
 .banner-section .container .text-logo h5 {letter-spacing: 3px; padding: 15px 0; line-height: 1.5;}
 
-.banner-section .container .col2 {background-color: white; padding: 40px; margin-right: 40px; padding-bottom: 73px; height: 100%; min-width: 360px;}
+.banner-section .container .col2 {background-color: white; padding: 40px; margin-right: 40px; padding-bottom: 73px; height: 100%; max-width: 500px;}
 
 .banner-section .container .col2 h3 {padding: 0;}
 
@@ -118,7 +123,7 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 
 .banner-section .container .col2 label {padding-bottom: 20px; padding-top: 10px;}
 
-.banner-section .container .col2 .send-logo {padding: 30px 15px;}
+.banner-section .container .col2 .send-logo {padding: 30px 15px; padding-bottom: 0px;}
 
 .banner-section .container .first-heading {max-width: 600px;}
 
@@ -127,7 +132,7 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 @media (max-width: 1240px){
     .banner-section .container .col2 {min-width: 0;}
     .banner-section {height: auto;}
-    .banner-section .container {flex-direction: column;}
+    .banner-section .container {flex-direction: column; align-items: center; padding-top: 20px;}
     .banner-section .text-logo {margin: auto; text-align: center; margin-bottom: 40px;}
     .banner-section .container .col2 {margin: 0; padding-bottom: 40px;}
     .banner-section .container .col2 h3 {text-align: center;}
@@ -140,7 +145,6 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 
 
 @media (max-width: 600px) {
-
     .banner-section .container .send-logo { flex-direction: column; row-gap: 20px;}
     .banner-section .container h2.d-flex {display: block;}
 }
@@ -191,12 +195,27 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 .frist-section { margin: 80px 0; overflow-x: hidden;}
 .frist-section .container {margin: auto;}
 .frist-section .container h5 {color: var(--grey); margin: auto; text-align: center; letter-spacing: 2px;}
+.frist {display: block;}
+.frist-mobile {display: none;}
 
 .big-title{
     position:relative;
     white-space: nowrap;
+   left: -30vw
     
   }
+
+
+@media (max-width: 1000px){
+    .big-title {font-size: 50px;}
+}
+
+@media (max-width: 768px){
+    .frist {display: none;}
+    .frist-mobile {display: block; margin: auto;}
+    .frist-mobile h1 {font-size: 35px; text-align: center;}
+}
+
 
   /* FRIST */
 
@@ -262,14 +281,20 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 .contact-forms-section .container .first-col {width: 50%;}
 .contact-forms-section .container .form {width: 50%; margin-top: 13px; max-width: 500px;}
 
-.contact-forms-section .container .form button.send {background-color: white; color: var(--blue);  height: 100%;border-radius: 0px ;border-top-right-radius: 10px; border-bottom-right-radius: 10px; margin: 0; border: 1px solid white;}
+.contact-forms-section .container .form button.send {background-color: white; color: var(--blue);  height: 100%;border-radius: 0px ;border-top-right-radius: 10px; border-bottom-right-radius: 10px; margin: 0; border: 1px solid white; padding-bottom: 11px;}
 
 
-.contact-forms-section .container .form input {background-color: var(--blue); border: 1px solid white; width: 100%; padding: 15px 0; font-weight: 300; border-radius: 10px; }
 
-.contact-forms-section .container .form .input2 {margin-top: 5px;}
-.contact-forms-section .container .form .input2 input {border-top-right-radius: 0px; border-bottom-right-radius: 0px; } 
-.contact-forms-section .container .form ::placeholder {color: white; padding: 0 20px;}
+.contact-forms-section .container .form input {background-color: var(--blue); border: 1px solid white; width: 100%; padding: 15px 0; font-weight: 500; border-radius: 10px; height: 16px;  color: white; }
+
+.contact-forms-section .container .form input::placeholder {color: white; position: relative; left: 15px; }
+
+
+
+.contact-forms-section .container .form .input2 {margin-top: 10px;}
+
+.contact-forms-section .container .form .squared input {border-top-right-radius: 0px; border-bottom-right-radius: 0px; } 
+
 
 @media (max-width: 1300px){
     .contact-forms-section .container .first-col h3 {margin-bottom: 20px;}
@@ -290,8 +315,8 @@ button:hover {cursor: pointer; transition: 0.6s all; background-color: var(--lig
 }
 
 @media (max-width: 425px){
-    .contact-forms-section .container .form button.send {background-color: white; color: var(--blue);  height: 100%;border-radius: 10px; margin: 0; border: 1px solid white;}
-    .input2 {flex-direction: column; row-gap: 5px;}
+    .contact-forms-section .container .form button.send {background-color: white; color: var(--blue);  height: 100%;border-radius: 10px; margin: 0; border: 1px solid white; }
+    .input2 {flex-direction: column; row-gap: 10px;}
     .contact-forms-section .container .form .input2 input {border-radius: 10px;}
 }
 
@@ -315,7 +340,7 @@ footer .main-footer .container ul li.d-flex {column-gap: 5px;}
 
 .grey-circle {color: white; background-color: #a5a5a5; border-radius: 50%; padding: 5px; height: 16px; width: 16px; display: flex; justify-content: center; font-size: 14px; align-items: center;}
 
-.grey-circle:hover {transition: 0.6s all; background-color: var(--blue);}
+.grey-circle:hover {transition: 0.6s all; background-color: var(--blue); height: 20px;}
 
 .count-2 {column-count: 2;}
 
