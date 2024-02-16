@@ -244,13 +244,13 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 
 @media (max-width: 1000px){
-    .big-title {font-size: 50px;}
+    .big-title {font-size: 60px;}
 }
 
 @media (max-width: 768px){
     .frist {display: none;}
     .frist-mobile {display: block; margin: auto;}
-    .frist-mobile h1 {font-size: 35px; text-align: center;}
+    .frist-mobile h1 {font-size: 60px; text-align: center;}
 }
 
 
