@@ -1,7 +1,10 @@
 $('.carousel').slick({
+    arrows: false,
     dots: false,
     infinite: true,
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [
