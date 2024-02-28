@@ -137,7 +137,7 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 .banner-section .container {column-gap: 40px;}
 
-.banner-section .container .col2 label {padding-bottom: 20px; padding-top: 10px;}
+.banner-section .container .col2 label {padding-bottom: 10px; padding-top: 10px;}
 
 .banner-section .container .col2 .send-logo {padding: 30px 15px; padding-bottom: 0px; column-gap: 20px; row-gap: 20px; justify-content: center;}
 
@@ -154,7 +154,8 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 .banner-section .container input {border: none; border-bottom: 2px solid; margin-bottom: 8px; font-size: 16px; padding-bottom: 8px;}
 
 @media (max-width: 992px){
-    .banner-section .container .first-heading img { top: 33px;}
+    .banner-section .container .text-logo h5 {margin-bottom: 0px;}
+    .banner-section .container .first-heading img {margin-bottom: 0px;}
     .banner-section .container .text-logo {line-height: 60px;}
     .banner-section .container .col2 {min-width: 0;}
     .banner-section {height: auto;}
@@ -170,11 +171,13 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 }
 
 @media(max-width: 711px){
+    .banner-section .container .text-logo h5 {margin-bottom: 30px;}
     .banner-section .container .text-logo h2 { line-height: 0.8; }
-    .banner-section .container .text-logo h5 {margin-bottom: 35px;}
+    
 }
 
 @media (max-width: 600px) {
+    .banner-section .container .text-logo h5 {margin-bottom: 35px;}
     .banner-section .container .send-logo { flex-direction: column; row-gap: 20px;}
     .banner-section .container h2.d-flex {display: block;}
 }
@@ -298,12 +301,10 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 .banner2-section {background-image: url(../images/banner2.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;}
 .banner2-section .container {text-align: left; padding: 50px 0; margin: auto;}
 .banner2-section .container .texts {max-width: 850px;}
-.banner2-section .container h2 {color: white; line-height: 1; padding: 20px 0; font-size: 50px;}
+.banner2-section .container h2 {color: white; line-height: 1.2; padding: 20px 0; font-size: 50px;}
 .banner2-section .container h5 {font-size: 18px; color: white;}
 
-/* @media (max-width: 1366px){
-    .banner2-section .texts {scale: 0.85;}
-} */
+
 
 
 @media (max-width: 900px){
@@ -343,7 +344,7 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 
 
-.contact-forms-section .container .form .input2 {margin-top: 10px;}
+.contact-forms-section .container .form  {display: flex; flex-direction: column;row-gap: 10px;}
 
 .contact-forms-section .container .form .squared input {border-top-right-radius: 0px; border-bottom-right-radius: 0px; } 
 
@@ -406,6 +407,10 @@ footer .main-footer .container ul li.d-flex {column-gap: 5px;}
 footer .main-footer .aligned {position: relative;right: 22px;}
 
 footer .main-footer .aligned i {position: relative;right: 5px;}
+
+.d-flex-col { display: flex; flex-direction: column;}
+
+.row10 {row-gap: 10px;}
 
 
 @media (max-width: 1100px){
