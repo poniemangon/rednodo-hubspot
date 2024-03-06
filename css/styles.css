@@ -151,7 +151,7 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 
 
-.banner-section .container input {border: none; border-bottom: 2px solid; margin-bottom: 8px; font-size: 16px; padding-bottom: 8px;}
+.banner-section .container input {border: none; border-bottom: 2px solid; margin-bottom: 8px; font-size: 16px; padding-bottom: 8px; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 15px;}
 
 @media (max-width: 992px){
     .banner-section .container .text-logo h5 {margin-bottom: 0px;}
@@ -340,13 +340,13 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 .contact-forms-section .container .form input {background-color: var(--blue); border: 1px solid white; width: 100%; padding: 15px 0; font-weight: 500; border-radius: 8px; height: 48px; color: white; padding: 15px; box-sizing: border-box; font-family: 'Poppins', sans-serif; font-size: 16px;}
 
-.contact-forms-section .container .form input::placeholder {color: white; position: relative;  }
+.contact-forms-section .container .form input::placeholder {color: white; position: relative; font-weight: 400; }
 
 
 
 .contact-forms-section .container .form  {display: flex; flex-direction: column;row-gap: 10px;}
 
-.contact-forms-section .container .form .squared input {border-top-right-radius: 0px; border-bottom-right-radius: 0px; } 
+.contact-forms-section .container .form .squared input {border-top-right-radius: 0px; border-bottom-right-radius: 0px; font-weight: 400; } 
 
 
 @media (max-width: 1300px){
@@ -411,6 +411,8 @@ footer .main-footer .aligned i {position: relative;right: 5px;}
 .d-flex-col { display: flex; flex-direction: column;}
 
 .row10 {row-gap: 10px;}
+
+.row25 {row-gap: 25px;}
 
 
 @media (max-width: 1100px){
