@@ -392,9 +392,11 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 footer .main-footer .container {margin: auto; margin-top: 60px; margin-bottom: 40px;}
 
-footer .main-footer .container h5 {font-size: 15px;}
+footer .main-footer .container h5 {font-size: 16px;}
 
-footer .main-footer .container ul li {margin-bottom: 7px;}
+footer .main-footer .container ul li {margin-bottom: 7px; font-size: 16px;}
+
+footer .main-footer .container ul li a {font-size: 16px;}
 
 footer .main-footer .container ul li.d-flex {column-gap: 5px;}
 
