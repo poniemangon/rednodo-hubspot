@@ -437,7 +437,7 @@ footer .logo-section .container a {color: var(--darkgrey);}
 
 footer .logo-section .container div {column-gap: 5vw;}
 
-footer .logo-section .container .links {position: relative;bottom: 7px; }
+footer .logo-section .container .links {position: relative;bottom: 7px; display: none;}
 
 @media (max-width: 800px) {
     footer .logo-section .container {flex-direction: column; justify-content: center; padding: 40px 0;  }
