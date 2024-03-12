@@ -293,7 +293,7 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 .slide2-section .item .blue-circle {position: relative; top: 32px; right: 20px; cursor: pointer;}
 
-.slide2-section .item .blue-circle:hover {transition: 0.5s; border: 5px solid #b2d7ec;}
+.slide2-section .item .blue-circle:hover {transition: 0.5s;  box-shadow: 0 0 0 10px rgba(178, 215, 236, 0.5);}
 
 .slide2-section .container.mobile {display: none;}
 
