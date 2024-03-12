@@ -278,7 +278,7 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 .mtop0 {margin-top: 0px !important;}
 
-.slide2-section .container {margin: auto; flex-wrap: wrap; justify-content: space-between; margin-bottom: 40px; row-gap: 10px;}
+.slide2-section .container {margin: auto; flex-wrap: wrap; justify-content: space-between; margin-bottom: 40px; row-gap: 10px; column-gap: 40px;}
 
 .slide2-section .card {max-width: 470px; min-height: 202px;  margin-top: 0px; background-color: #fafafa; padding: 40px 50px; border-radius: 10px; column-gap: 30px;}
 
@@ -297,7 +297,7 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 .slide2-section .container.mobile {display: none;}
 
-@media (max-width: 1366px){
+@media (max-width: 1480px){
     .slide2-section .container {justify-content: center; row-gap: 10px;}
     .slide2-section .card { margin: auto;}
 
