@@ -281,9 +281,9 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 .slide2-section .container {display: flex; margin: auto; flex-wrap: wrap; justify-content: center; margin-bottom: 40px; row-gap: 50px; column-gap: 50px; align-items: stretch;}
 
 
-.slide2-section .card {max-width: 600px; width: calc(50% - 150px);   background-color: #fafafa; 
+.slide2-section .card {max-width: 600px; width: calc(50% - 125px);   background-color: #fafafa; 
     padding: 40px 50px; border-radius: 10px; column-gap: 20px; position: relative; align-items: flex-start;
-    justify-content: center;    
+    justify-content: center; box-sizing: content-box;
 }
 
 .slide2-section .card img {height: 70px;}
@@ -305,7 +305,7 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 600px){
     .slide2-section .card { flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 }
 
