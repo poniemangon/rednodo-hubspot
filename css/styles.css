@@ -303,13 +303,13 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 }
 
 @media (max-width: 1250px){
-    .slide2-section .card { margin: auto;}
+    .slide2-section .card { margin: auto; max-width: none; }
     .slide2-section .card {display: block; max-height: none; text-align: center;}
     .slide2-section .card .texts {width: 100%; text-align: center;}
 }
 
 @media (max-width: 1000px){
-    .slide2-section .container {max-width: 570px;}
+    /* .slide2-section .container {max-width: 570px;} */
     .slide2-section .container .row {flex-direction: column;justify-content: center; row-gap: 10px;}
 
 
