@@ -278,7 +278,7 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 
 .mtop0 {margin-top: 0px !important;}
 
-.slide2-section .container {display: flex; margin: auto; flex-wrap: wrap; justify-content: center; margin-bottom: 40px; row-gap: 50px; column-gap: 50px; align-items: stretch;}
+.slide2-section .container {display: flex; margin: auto; flex-wrap: wrap; justify-content: center; margin-bottom: 70px; row-gap: 50px; column-gap: 50px; align-items: stretch;}
 
 
 .slide2-section .card {max-width: 600px; width: calc(50% - 125px);   background-color: #fafafa; 
@@ -353,9 +353,9 @@ button:hover {cursor: pointer; transition:  0.6s ease-in-out; background-color: 
 .contact-forms-section .container .form button.send:hover {background-color: black; color: white; transition: 0.6s ease-in; border: 1px solid black;}
 
 
-.contact-forms-section .container .form input {background-color: var(--blue); border: 1px solid white; width: 100%; padding: 15px 0; font-weight: 500; border-radius: 8px; height: 48px; color: white; padding: 15px; box-sizing: border-box; font-family: 'Poppins', sans-serif; font-size: 16px;}
+.contact-forms-section .container .form input {background-color: var(--blue); border: 1px solid white; width: 100%; padding: 15px 0; font-weight: 500; border-radius: 8px; height: 48px; color: white; padding: 15px; box-sizing: border-box; font-family: 'Open Sans', sans-serif; font-size: 16px;}
 
-.contact-forms-section .container .form input::placeholder {color: white; position: relative; font-weight: 400; }
+.contact-forms-section .container .form input::placeholder {color: white; position: relative; font-weight: 400; font-family: 'Open Sans', sans-serif; }
 
 
 
@@ -450,9 +450,11 @@ footer .logo-section .container {margin: auto; padding: 40px 45px; border-top: 1
 
 footer .logo-section .container a {color: var(--darkgrey);}
 
+footer .logo-section .container a:hover {color: var(--blue);}
+
 footer .logo-section .container div {column-gap: 5vw;}
 
-footer .logo-section .container .links {position: relative;bottom: 7px; display: none;}
+footer .logo-section .container .links {position: relative;bottom: 7px; }
 
 @media (max-width: 800px) {
     footer .logo-section .container {flex-direction: column; justify-content: center; padding: 40px 0;  }
