@@ -433,6 +433,7 @@ footer .main-footer .aligned i {position: relative;right: 5px;}
 
 
 @media (max-width: 1100px){
+    .count-2 {column-count: 1;}
     footer .main-footer .aligned i {position: relative;right: 5px;}
     footer .main-footer .aligned {position: relative;right: 0px;}
     footer .main-footer .container {flex-direction: column; text-align: center; justify-content: center; row-gap: 20px;}
